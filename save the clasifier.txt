@@ -1,0 +1,8 @@
+import cPickle
+# save the classifier
+with open('my_dumped_classifier.pkl', 'wb') as fid:
+    cPickle.dump(clf, fid)    
+
+# load it again
+with open('my_dumped_classifier.pkl', 'rb') as fid:
+    clf_loaded = cPickle.load(fid)
